@@ -1,0 +1,12 @@
+<input
+	type="text"
+	class = "form-control"
+	[(ngModel)]="userName"
+	(input)="onUpdateUserName($event)"
+>
+<p>{{ userName }}</p>
+<button class="btn btn-primary"
+ [disabled]="buttonDisableFlag"
+ (click)="onInputClick($event)"
+ 
+>Click Me</button>
